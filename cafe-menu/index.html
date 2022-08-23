@@ -1,20 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" /> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Cafe Menu using HTML/CSS</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="menu">
+      <header>
         <h1>Camper Menu</h1>
-        <p class="italics">Est. in 2022</p> 
+        <p class="est italics">Est. in 2022</p>
         <div class="border-horizontal"></div>
-        <section id="food">
-            <h3>Food Menu</h3>
-        </section>
+      </header>
+      <section id="Coffee">
+        <h3 class="category">Coffee</h3>
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg"
+          alt="coffee-icon"
+        />
+        <article class="item">
+          <p class="item-name">French Vanilla</p>
+          <p class="item-price">3.00</p>
+        </article>
+
+        <article class="item">
+          <p class="item-name">Caramel Macchiato</p>
+          <p class="item-price">3.75</p>
+        </article>
+
+        <article class="item">
+          <p class="item-name">Pumpkin Spice</p>
+          <p class="item-price">3.50</p>
+        </article>
+
+        <article class="item">
+          <p class="item-name">Hazelnut</p>
+          <p class="item-price">4.00</p>
+        </article>
+
+        <article class="item">
+          <p class="item-name">Mocha</p>
+          <p class="item-price">4.50</p>
+        </article>
+      </section>
+
+      <div class="border-horizontal"></div>
+
+      <section id="food">
+        <h3 class="category">Dessert</h3>
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg"
+          alt="dessert-icon"
+        />
+        <article class="item">
+          <p class="item-name">Donut</p>
+          <p class="item-price">1.50</p>
+        </article>
+        <article class="item">
+          <p class="item-name">Cherry Pie</p>
+          <p class="item-price">2.75</p>
+        </article>
+        <article class="item">
+          <p class="item-name">Cheesecake</p>
+          <p class="item-price">3.00</p>
+        </article>
+        <article class="item">
+          <p class="item-name">Cinnamon Roll</p>
+          <p class="item-price">2.50</p>
+        </article>
+      </section>
+
+      <div class="border-horizontal"></div>
+      
+      <footer>
+       <p> <a href="#">Visit our Website</a></p>
+        <p>123 Free Code Camp Drive</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
