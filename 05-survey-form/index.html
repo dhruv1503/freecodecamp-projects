@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p class="italics" id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form id="survey-form" action="#">
+        <label for="name" id="name-label">
+           <p>Name : </p> <input type="text" id="name" placeholder="Enter your Name" required />
+        </label> 
+
+        <label for="email" id="email-label">
+           <p>Email : </p> <input type="email" id="email" placeholder="Enter your email id" required />
+        </label>
+        
+        <label for="number" id="number-label">
+           <p>Age :</p> <input type="number" id="number" placeholder="Enter your Age" required />
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            Which option best describes your current role?
+            <select name="c-role" id="dropdown">
+                <option>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full time job</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="others">Others</option>
+            </select>
+        </label>
+        
+        <section id="radio-question">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="definitely">
+            <input type="radio" class="inline" id="definitely" name="refferal" value="10" checked /> <p class="inline"> Definitely</p>
+        </label>
+        <label for="maybe">
+            <input type="radio" class="inline" id="maybe" name="refferal" value="5" /> <p class="inline"> Maybe</p>
+        </label>
+        <label for="never">
+            <input type="radio" class="inline" id="never" name="refferal" value="0" /> <p class="inline"> Never</p>
+        </label>
+    </section>
+
+    <section>
+        <p>What is your favorite feature on free code camp ?</p>
+        <select name="fav-feature" id="dropdown-2">
+            <option>Please select one</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+        </select>
+    </section>
+         
+    <section>
+        <p>Any comments or suggestions?</p>
+        <textarea name="feedback" id="" cols="30" rows="10" placeholder="Enter your comments"></textarea>
+    </section>
+        <button type="submit" >Submit</button>
+    </form>
+</body>
+</html>
